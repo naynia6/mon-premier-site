@@ -1,45 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-   <title>Samir Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir Barber</title>
 
     <style>
         body {
-            background-color: lightblue;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
             text-align: center;
-            font-family: Arial;
-            padding-top: 80px;
+        }
+
+        header {
+            padding: 70px 20px;
+            background: linear-gradient(135deg, #111, #333);
         }
 
         h1 {
-            color: darkblue;
+            font-size: 45px;
+            color: #d4af37;
         }
 
-        p {
+        header p {
             font-size: 20px;
         }
 
-        button {
-            background-color: blue;
+        section {
+            padding: 40px 20px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background: #222;
+            padding: 25px;
+            width: 220px;
+            border-radius: 15px;
+        }
+
+        .service h2 {
+            color: #d4af37;
+        }
+
+        .price {
+            font-size: 22px;
+            color: #fff;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            background: #25D366;
             color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #000;
+            padding: 20px;
+            color: #aaa;
         }
     </style>
 </head>
 
 <body>
 
-   <h1>Samir Design</h1>
+<header>
+    <h1>Samir Barber</h1>
+    <p>أناقة، حلاقة، وستايل في مكان واحد ✂️</p>
 
-    <p>أنا أقدم خدمات إنشاء المواقع الإلكترونية.</p>
-
-    <a href="https://wa.me/212697772882">
-        <button>تواصل معي عبر واتساب</button>
+    <a class="whatsapp" href="https://wa.me/212697772882">
+        احجز عبر واتساب
     </a>
+</header>
+
+<section>
+    <h2>خدماتنا</h2>
+
+    <div class="services">
+
+        <div class="service">
+            <h2>✂️ حلاقة الشعر</h2>
+            <p>حلاقة عصرية حسب الستايل ديالك</p>
+            <div class="price">50 DH</div>
+        </div>
+
+        <div class="service">
+            <h2>🧔 اللحية</h2>
+            <p>تشذيب وتصفيف اللحية</p>
+            <div class="price">30 DH</div>
+        </div>
+
+        <div class="service">
+            <h2>🔥 Hair + Beard</h2>
+            <p>حلاقة الشعر واللحية معاً</p>
+            <div class="price">70 DH</div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>أوقات العمل 🕐</h2>
+    <p>الإثنين - السبت: 10:00 - 20:00</p>
+    <p>الأحد: مغلق</p>
+</section>
+
+<footer>
+    © 2026 Samir Barber
+</footer>
 
 </body>
 </html>
